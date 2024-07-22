@@ -21,7 +21,7 @@ const useSpeechToText = (options: SpeechRecognitionOptions = {}) => {
     recognitionRef.current = recognition;
 
     recognition.interimResults = options.interimResults || true;
-    recognition.lang = options.lang || "en-US";
+    recognition.lang = options.lang || "pt-BR";
     recognition.continuous = options.continuous || false;
 
     if ("webkitSpeechGrammarList" in window) {

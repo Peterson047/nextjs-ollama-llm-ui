@@ -133,7 +133,7 @@ export default function Home() {
         // Trigger the storage event to update the sidebar component
         window.dispatchEvent(new Event("storage"));
       } catch (error) {
-        toast.error("An error occurred. Please try again.");
+        toast.error("Ocorreu um erro, tente novamente.");
         setLoadingSubmit(false);
       }
     }
@@ -162,7 +162,7 @@ export default function Home() {
     }
   };
 
-  const onOpenChange = (isOpen: boolean) => { 
+  const onOpenChange = (isOpen: boolean) => {
     const username = localStorage.getItem("ollama_user")
     if (username) return setOpen(isOpen)
 
@@ -170,7 +170,7 @@ export default function Home() {
     window.dispatchEvent(new Event("storage"))
     setOpen(isOpen)
   }
-  
+
   return (
     <main className="flex h-[calc(100dvh)] flex-col items-center ">
       <Dialog open={open} onOpenChange={onOpenChange}>

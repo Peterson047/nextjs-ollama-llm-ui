@@ -18,7 +18,7 @@ export default function CodeDisplayBlock({ code, lang }: ButtonCodeblockProps) {
   const copyToClipboard = () => {
     navigator.clipboard.writeText(code);
     setisCopied(true);
-    toast.success("Code copied to clipboard!");
+    toast.success("Código copiado para área de transferência");
     setTimeout(() => {
       setisCopied(false);
     }, 1500);

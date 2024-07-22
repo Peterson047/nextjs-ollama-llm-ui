@@ -95,7 +95,7 @@ export default function ChatList({
               className="h-20 w-14 object-contain dark:invert"
             />
             <p className="text-center text-lg text-muted-foreground">
-              How can I help you today?
+              Em que posso ajudar?
             </p>
           </div>
 

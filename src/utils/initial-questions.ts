@@ -1,35 +1,35 @@
 export const INITIAL_QUESTIONS = [
   {
-    content: "What is the capital of France?",
+    content: "O que é VT?",
   },
   {
-    content: 'Who wrote "To Kill a Mockingbird"?',
+    content: 'Pra que serve o CLOUD UX?',
   },
   {
-    content: "What is the boiling point of water in Celsius?",
+    content: "Como abrir um chamado?",
   },
   {
-    content: "How many planets are there in our solar system?",
+    content: "Como é organizado os setores?",
   },
   {
-    content: "What year did the Titanic sink?",
+    content: "Qual a principal praça da tv?",
   },
   {
-    content: "Who painted the Mona Lisa?",
+    content: "Quando foi criada a TV TEM?",
   },
   {
-    content: "What is the square root of 144?",
+    content: "Como sugiro pautas?",
   },
   {
-    content: "Who is the current President of the United States?",
+    content: "Quem é o atual presidente do brasil?",
   },
   {
-    content: "What is the tallest mountain in the world?",
+    content: "Esqueci minha senha, como solicito uma nova?",
   },
   {
-    content: "What is the chemical symbol for gold?",
+    content: "O que preciso para criar uma conta no Backstage?",
   },
   {
-    content: "Who discovered penicillin?",
+    content: "Qual a história da rede Globo?",
   },
 ];
