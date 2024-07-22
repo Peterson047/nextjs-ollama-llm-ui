@@ -4,25 +4,11 @@
 
 
 
-TEMPLATE """{{ if .System }}<|im_start|>system{
-    { .System
-    }
-}<|im_end|>
-{
-    { end
-    }
-}{
-    { if .Prompt
-    }
-}<|im_start|>user
-{
-    { .Prompt
-    }
-}<|im_end|>
-{
-    { end
-    }
-}<|im_start|>ORA
+TEMPLATE """{{ if .System }}<|im_start|>system
+{{ .System }}<|im_end|>
+{{ end }}{{ if .Prompt }}<|im_start|>user
+{{ .Prompt }}<|im_end|>
+{{ end }}<|im_start|>ORA
 """
 
 FROM C:\Users\peterson.pereira\.ollama\models\blobs\sha256-6a0746a1ec1aef3e7ec53868f220ff6e389f6f8ef87a01d77c96807de94ca2aa

@@ -193,10 +193,9 @@ export default function Home() {
         />
         <DialogContent className="flex flex-col space-y-4">
           <DialogHeader className="space-y-2">
-            <DialogTitle>Welcome to Ollama!</DialogTitle>
+            <DialogTitle>Bem vindo ao projeto ORA (TEM.AI)</DialogTitle>
             <DialogDescription>
-              Enter your name to get started. This is just to personalize your
-              experience.
+              Digite o seu nome para que possamos personalizar sua experiência.
             </DialogDescription>
             <UsernameForm setOpen={setOpen} />
           </DialogHeader>

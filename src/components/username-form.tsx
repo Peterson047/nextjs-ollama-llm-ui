@@ -49,12 +49,12 @@ export default function UsernameForm({ setOpen }: UsernameFormProps) {
           name="username"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Name</FormLabel>
+              <FormLabel>Nome</FormLabel>
               <FormControl>
-                <Input placeholder="Qaul o seu nome?" {...field} />
+                <Input placeholder="Qual o seu nome?" {...field} />
               </FormControl>
               <FormDescription>
-                This won&apos;t be public. It&apos;s just for you.
+                Seu nome não ficará público, apenas para você.
               </FormDescription>
               <FormMessage />
             </FormItem>

@@ -21,7 +21,7 @@ import { toast } from "sonner"
 
 const formSchema = z.object({
   username: z.string().min(2, {
-    message: "Name must be at least 2 characters.",
+    message: "O nome precisa conter pelo menos 2 caracteres.",
   }),
 });
 
@@ -46,7 +46,7 @@ export default function EditUsernameForm({ setOpen }: EditUsernameFormProps) {
   function onSubmit(values: z.infer<typeof formSchema>) {
     localStorage.setItem("ollama_user", values.username);
     window.dispatchEvent(new Event("storage"));
-    toast.success("Name updated successfully");
+    toast.success("Nome atualizado com sucesso!");
   }
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -57,10 +57,10 @@ export default function EditUsernameForm({ setOpen }: EditUsernameFormProps) {
 
   return (
     <Form {...form}>
-       <div className="w-full flex flex-col gap-4 pt-8">
-       <FormLabel>Theme</FormLabel>
+      <div className="w-full flex flex-col gap-4 pt-8">
+        <FormLabel>Tema</FormLabel>
         <ModeToggle />
-       </div>
+      </div>
       <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
         <FormField
           control={form.control}
